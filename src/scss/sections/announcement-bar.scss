@@ -1,0 +1,53 @@
+@import '../core/variables';
+
+.announcement-bar {
+	position: relative;
+	background-color: $grey;
+	height: $height-header;
+	display: flex;
+	align-items: center;
+	&__inner {
+		height: $height-header;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		span {
+			font-size: 0.75em;
+		}
+		a {
+			display: block;
+			text-decoration: none;
+		}
+	}
+	&__extras {
+		height: $height-header;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__menu {
+		height: $height-header;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		nav,
+		ul,
+		li,
+		a,
+		span {
+			display: flex;
+			align-items: center;
+			height: $height-header;
+		}
+		nav {
+			height: fit-content;
+		}
+		ul {
+			display: flex;
+			gap: 1em;
+			align-items: center;
+		}
+		&--extras {
+			justify-content: flex-start;
+		}
+	}
+}

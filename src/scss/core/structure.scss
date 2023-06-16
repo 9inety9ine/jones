@@ -1,0 +1,29 @@
+main {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.wrap {
+	width: 100%;
+	max-width: $w-xl;
+	margin: 0 auto;
+	padding: 0 3em;
+	@media (max-width: $w-l) {
+		padding: 0 2em;
+	}
+	@media (max-width: $w-m) {
+		padding: 0 1em;
+	}
+	&--small {
+		max-width: $w-s;
+	}
+	&--medium {
+		max-width: $w-m;
+	}
+	&--large {
+		max-width: $w-l;
+	}
+	&--full {
+		max-width: 100%;
+	}
+}

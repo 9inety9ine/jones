@@ -5,6 +5,9 @@
 	position: relative;
 	background-color: $white;
 	border-top: 1px solid $grey;
+	@media (max-width: $w-m) {
+		padding: 2em 0;
+	}
 	&__inner {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -15,6 +18,11 @@
 		transition-property: top, opacity;
 		transition-duration: 0.25s;
 		transition-timing-function: ease-out;
+		@media (max-width: $w-l) {
+			gap: 1.5em;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
 		&.preload {
 			padding: 0;
 			top: 1em;

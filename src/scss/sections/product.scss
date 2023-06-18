@@ -1,12 +1,24 @@
 @import '../core/variables';
 
 .product {
-	padding: 4em 0;
+	padding: 3em 0 4em 0;
+	@media (max-width: $w-m) {
+		padding: 1em 0 1.5em 0;
+	}
 	&__inner {
 		display: grid;
 		grid-template-columns: 55% 1fr;
 		gap: 3em;
 		position: relative;
+		@media (max-width: $w-l) {
+			grid-template-columns: 1fr 1fr;
+			gap: 2em;
+		}
+		@media (max-width: $w-m) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr;
+			gap: 2em;
+		}
 		.sticker {
 			position: absolute;
 			left: -3px;
@@ -23,12 +35,19 @@
 		.large {
 			grid-column: 1 / span 2;
 		}
-		img {
-			width: 100%;
-			height: auto;
+		.zoom-wrapper {
 			padding: 1em;
 			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 			border-radius: $radius;
+			&:hover {
+				img {
+					opacity: 0;
+				}
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
 			top: 0;
 			opacity: 1;
 			transition-property: top, opacity;
@@ -124,6 +143,7 @@
 			.variant-options {
 				display: flex;
 				gap: 0.5em;
+				flex-wrap: wrap;
 			}
 			.variant-option {
 				button {

@@ -5,6 +5,9 @@
 	border-top: 1px solid $grey;
 	padding: 4em 0;
 	background-color: $grey-light;
+	@media (max-width: $w-m) {
+		padding: 2em 0;
+	}
 	&__header {
 		h3 {
 			font-size: 1.75em;
@@ -13,10 +16,20 @@
 		text-align: center;
 		text-transform: capitalize;
 		margin-bottom: 3em;
+		@media (max-width: $w-m) {
+			margin-bottom: 1.5em;
+		}
 	}
 	&__products {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 3em;
+		@media (max-width: $w-l) {
+			gap: 2em;
+		}
+		@media (max-width: $w-m) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1em;
+		}
 	}
 }

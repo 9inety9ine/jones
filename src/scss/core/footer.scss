@@ -1,10 +1,20 @@
 .footer {
 	padding: 4em 0 6em 0;
 	border-top: 1px solid $grey-dark;
+	@media (max-width: $w-m) {
+		padding: 2em 0 3em 0;
+	}
 	&__inner {
 		display: grid;
-		grid-template-columns: 20em 1fr auto;
+		grid-template-columns: 20em 1fr;
 		gap: 4em;
+		@media (max-width: $w-xl) {
+			gap: 2em;
+		}
+		@media (max-width: $w-l) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
 	}
 	h4 {
 		font-size: 1em;
@@ -12,6 +22,28 @@
 		margin-bottom: 0.25em;
 	}
 	&__newsletter {
+		@media (max-width: $w-l) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: 'newsletter newsletter social';
+			gap: 2em;
+		}
+		@media (max-width: $w-m) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: 'newsletter' 'social';
+			gap: 1em;
+		}
+		form {
+			@media (max-width: $w-l) {
+				grid-area: newsletter;
+			}
+		}
+		.branding {
+			display: inline-block;
+			width: 7em;
+			margin-bottom: 0.75em;
+		}
 		p {
 			font-size: 0.875em;
 			margin-bottom: 0.75em;
@@ -21,6 +53,14 @@
 			align-items: flex-start;
 			gap: 1em;
 			padding-top: 0.75em;
+			margin-bottom: 1.5em;
+			border-bottom: 1px solid $grey-dark;
+			padding-bottom: 1.75em;
+			@media (max-width: $w-l) {
+				margin-bottom: 0;
+				border-bottom: none;
+				padding-bottom: 0;
+			}
 			label {
 				display: flex;
 				align-items: center;
@@ -61,10 +101,13 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 2em;
+		@media (max-width: $w-m) {
+			gap: 0.5em;
+		}
 		h4 {
 			padding-bottom: 0.5em;
 			margin-bottom: 0.35em;
-			border-bottom: 1px solid $grey-darker;
+			border-bottom: 1px solid $grey-dark;
 		}
 		li {
 			white-space: nowrap;
@@ -79,10 +122,8 @@
 		}
 	}
 	&__social {
-		.branding {
-			display: inline-block;
-			width: 7em;
-			margin-bottom: 1.25em;
+		@media (max-width: $w-l) {
+			grid-area: social;
 		}
 		h4 {
 			margin-bottom: 0.25em;

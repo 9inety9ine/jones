@@ -9,6 +9,34 @@
 		padding: 1em 0;
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
+		@media (max-width: $w-l) {
+			grid-template-columns: 1fr auto 1fr;
+		}
+	}
+	&__mobile-toggle {
+		display: none;
+		@media (max-width: $w-l) {
+			display: flex;
+		}
+		button {
+			appearance: none;
+			font: 1em $font-base;
+			border: none;
+			background-color: transparent;
+			display: flex;
+			width: 1.5em;
+			height: 2em;
+			min-width: 1.5em;
+			justify-content: center;
+			align-items: center;
+			svg {
+				width: 1.5em;
+				height: 1.5em;
+				display: block;
+				line-height: 1;
+				fill: $black;
+			}
+		}
 	}
 	&__branding {
 		img {
@@ -22,6 +50,9 @@
 		ul {
 			display: flex;
 			gap: 1.5em;
+			@media (max-width: $w-l) {
+				gap: 1em;
+			}
 			a {
 				text-decoration: none;
 			}
@@ -37,6 +68,18 @@
 				width: 1.25em;
 				height: 1.25em;
 				fill: $black;
+			}
+		}
+		&--main {
+			@media (max-width: $w-l) {
+				display: none;
+			}
+		}
+		&__link {
+			&--search {
+				@media (max-width: $w-l) {
+					display: none;
+				}
 			}
 		}
 	}

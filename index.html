@@ -75,10 +75,19 @@
 		<header class="header">
 			<div class="wrap">
 				<div class="header__inner">
+					<div class="header__mobile-toggle">
+						<button>
+							<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
+								<path d="M1.6,5.2C0.7,5.2,0,5.9,0,6.8s0.7,1.6,1.6,1.6h28.8c0.9,0,1.6-0.7,1.6-1.6s-0.7-1.6-1.6-1.6H1.6z"/>
+								<path d="M1.6,23.6c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6h28.8c0.9,0,1.6-0.7,1.6-1.6c0-0.9-0.7-1.6-1.6-1.6H1.6z"/>
+								<path d="M1.6,14.4C0.7,14.4,0,15.1,0,16s0.7,1.6,1.6,1.6h28.8c0.9,0,1.6-0.7,1.6-1.6s-0.7-1.6-1.6-1.6H1.6z"/>
+							</svg>
+						</button>
+					</div>
 					<div class="header__branding">
 						<a href="#"><img src="assets/logo.png" alt="Jones" /></a>
 					</div>
-					<div class="header__menu">
+					<div class="header__menu header__menu--main">
 						<nav>
 							<ul>
 								<li>
@@ -108,21 +117,21 @@
 					<div class="header__menu header__menu--tools">
 						<nav>
 							<ul>
-								<li>
+								<li class="header__menu__link header__menu__link--search">
 									<a href="#">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
 											<path d="M32,30.3L20.2,18.5c1.6-2,2.6-4.4,2.6-7.2C22.7,5.1,17.6,0,11.4,0S0,5.1,0,11.4s5.1,11.4,11.4,11.4c2.7,0,5.2-1,7.2-2.6L30.3,32L32,30.3z M2.3,11.4c0-5,4-9,9-9s9,4,9,9s-4,9-9,9S2.3,16.4,2.3,11.4z" />
 										</svg>
 									</a>
 								</li>
-								<li>
+								<li class="header__menu__link header__menu__link--account">
 									<a href="#">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
 											<path d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16c8.8,0,16-7.2,16-16C32,7.2,24.8,0,16,0z M7.8,27.2c0.1-2.1,0.9-4.1,2.4-5.6c1.6-1.6,3.7-2.4,5.9-2.4c0,0,0,0,0,0c2.2,0,4.3,0.9,5.9,2.4c1.5,1.5,2.3,3.4,2.4,5.4c-2.3,1.8-5.3,2.9-8.4,2.9C12.9,29.9,10.1,28.9,7.8,27.2z M16.1,17c-2.5,0-4.4-2-4.4-4.4s2-4.4,4.4-4.4c2.5,0,4.4,2,4.4,4.4S18.6,17,16.1,17z M26.3,25.2c-0.4-1.9-1.4-3.7-2.8-5.2c-1-1-2.2-1.8-3.4-2.3c1.6-1.2,2.6-3.1,2.6-5.2c0-3.6-3-6.6-6.6-6.6c-3.6,0-6.6,3-6.6,6.6c0,2.1,1,4,2.6,5.2c-1.3,0.5-2.4,1.3-3.4,2.3c-1.5,1.5-2.5,3.3-2.9,5.4C3.6,23,2.1,19.6,2.1,16C2.1,8.4,8.4,2.1,16,2.1c7.6,0,13.9,6.2,13.9,13.9C29.9,19.5,28.5,22.8,26.3,25.2z" />
 										</svg>
 									</a>
 								</li>
-								<li>
+								<li class="header__menu__link header__menu__link--bag">
 									<a href="#">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
 											<path d="M28.5,27.6L26.6,8h-4.2V3.1C22.4,1.4,21,0,19.3,0h-6.6C11,0,9.6,1.4,9.6,3.1V8H5.4l-2,19.6c-0.2,2.2,1.4,4.2,3.6,4.4c0.1,0,0.3,0,0.4,0h17.1c2.2,0,4-1.8,4-4C28.6,27.8,28.6,27.7,28.5,27.6z M11.8,3.1c0-0.5,0.4-0.9,0.9-0.9h6.6c0.5,0,0.9,0.4,0.9,0.9V8h-8.3V3.1z M24.5,29.8H7.5c-0.1,0-0.1,0-0.2,0c-1-0.1-1.7-1-1.6-2l1.8-17.6h2.2v3.3h2.2v-3.3h8.3v3.3h2.2v-3.3h2.2l1.8,17.6c0,0.1,0,0.1,0,0.2C26.4,29,25.5,29.8,24.5,29.8z" />
@@ -143,12 +152,42 @@
 						<img src="assets/sale.png" alt="Sale" class="sticker" />
 						<div class="product__media">
 							<div class="product__media__images">
-								<div class="zoom large"><img src="assets/placeholder.png" data-src="assets/product-1.jpg" alt="Product 1" width="1000" height="1000" class="preload" /></div>
-								<div class="zoom"><img src="assets/placeholder.png" data-src="assets/product-2.jpg" alt="Product 2" width="1000" height="1000" class="preload" /></div>
-								<div class="zoom"><img src="assets/placeholder.png" data-src="assets/product-3.jpg" alt="Product 3" width="1000" height="1000" class="preload" /></div>
-								<div class="zoom"><img src="assets/placeholder.png" data-src="assets/product-4.jpg" alt="Product 4" width="1000" height="1000" class="preload" /></div>
-								<div class="zoom"><img src="assets/placeholder.png" data-src="assets/product-5.jpg" alt="Product 5" width="1000" height="1000" class="preload" /></div>
+								<div class="zoom-wrapper large">
+									<div class="zoom" style="background-image: url(assets/product-1.jpg)" onmousemove="zoom(event)">
+										<img src="assets/placeholder.png" data-src="assets/product-1.jpg" alt="Product 1" width="1000" height="1000" class="preload" />
+									</div>
+								</div>
+								<div class="zoom-wrapper">
+									<div class="zoom" style="background-image: url(assets/product-2.jpg)" onmousemove="zoom(event)">
+										<img src="assets/placeholder.png" data-src="assets/product-2.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
+									</div>
+								</div>
+								<div class="zoom-wrapper">
+									<div class="zoom" style="background-image: url(assets/product-3.jpg)" onmousemove="zoom(event)">
+										<img src="assets/placeholder.png" data-src="assets/product-3.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
+									</div>
+								</div>
+								<div class="zoom-wrapper">
+									<div class="zoom" style="background-image: url(assets/product-4.jpg)" onmousemove="zoom(event)">
+										<img src="assets/placeholder.png" data-src="assets/product-4.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
+									</div>
+								</div>
+								<div class="zoom-wrapper">
+									<div class="zoom" style="background-image: url(assets/product-5.jpg)" onmousemove="zoom(event)">
+										<img src="assets/placeholder.png" data-src="assets/product-5.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
+									</div>
+								</div>
 							</div>
+							<script>
+								const zoom = e => {
+									var zoomer = e.currentTarget;
+									offsetX = e.offsetX;
+									offsetY = e.offsetY;
+									x = (offsetX / zoomer.offsetWidth) * 100;
+									y = (offsetY / zoomer.offsetHeight) * 100;
+									zoomer.style.backgroundPosition = x + '% ' + y + '%';
+								};
+							</script>
 						</div>
 						<div class="product__info">
 							<div class="product__info__brand-reviews">
@@ -319,10 +358,10 @@
 											<p>You can return in our stores for free, or via Royal Mail and Collect Plus visit <a href="https://jonesbootmaker.returns.international">https://jonesbootmaker.returns.international</a> to return your items</p>
 											<p><strong>Returns Paid</strong></p>
 											<p><strong>For an extra 99p per item</strong>, you can select Returns Paid as an additional shipping option. This allows you to return your items to us until Saturday 16th January 2023 or up to 45 days of receipt (whichever is greater) at no further cost. Simply put the pre-paid label on the parcel and take it to the post office or your local <a href="https://www.collectplus.yodel.co.uk/">CollectPlus</a> store.</p>
-											<p>If you do not take out returns paid, you can still use the label to return your shoes - we will refund you the amount paid for the item returned less £2.50 to cover the cost of the return postage. Don’t forget you can always return the goods to one of our Jones stores for FREE or return via your own courier.</p>
+											<p>If you do not take out returns paid, you can still use the label to return your shoes - we will refund you the amount paid for the item returned less £2.50 to cover the cost of the return postage. Don't forget you can always return the goods to one of our Jones stores for FREE or return via your own courier.</p>
 											<p>Please note, the returns label is only valid for the order it was originally sent with. It is non-transferable.</p>
 											<p><strong>Royal Mail Home Collection Service</strong></p>
-											<p>The Royal Mail have now made posting your parcel easier, with the help of their <span style="text-decoration: underline;"><a href="https://www.royalmail.com/collection" target="_blank">Home Collection Service</a></span>, you can now return your order from the comfort of your own home. Simply use the returns address sticker provided with your order and book a collection suitable for you by visiting the <a href="https://send.royalmail.com/collect/youritems" target="_blank">Royal Mail website</a>.</p>
+											<p>The Royal Mail have now made posting your parcel easier, with the help of their <a href="https://www.royalmail.com/collection" target="_blank">Home Collection Service</a>, you can now return your order from the comfort of your own home. Simply use the returns address sticker provided with your order and book a collection suitable for you by visiting the <a href="https://send.royalmail.com/collect/youritems" target="_blank">Royal Mail website</a>.</p>
 											<p><strong>Cancellation</strong></p>
 											<p>Under the Consumer Contracts Regulations, you have the right to cancel your order for any reason within 14 days of receipt.</p>
 											<p>For information on how to cancel your order and how this process differs from a standard return, please contact our customer service team.</p>
@@ -348,7 +387,12 @@
 							<div class="product-card preload">
 								<link href="assets/product-card.css" rel="stylesheet" />
 								<div class="product-card__media">
-									<a href="#"><img src="assets/placeholder.png" data-src="assets/related-1.jpg" alt="Product 1" width="500" height="500" /></a>
+									<a href="#">
+										<img src="assets/placeholder.png" data-src="assets/related-1.jpg" alt="Product 1" width="500" height="500" />
+										<div class="stickers">
+											<div class="stickers__sticker stickers__sticker--new"><span>New</span></div>
+										</div>
+									</a>
 								</div>
 								<div class="product-card__details">
 									<h5><a href="#">Hendon High-Top Leather Trainers</a></h5>
@@ -363,6 +407,9 @@
 									<a href="#">
 										<img src="assets/sale.png" alt="Sale" class="sticker" />
 										<img src="assets/placeholder.png" data-src="assets/related-2.jpg" alt="Product 2" width="500" height="500" />
+										<div class="stickers">
+											<div class="stickers__sticker stickers__sticker--new"><span>Bestseller</span></div>
+										</div>
 									</a>
 								</div>
 								<div class="product-card__details">
@@ -413,7 +460,7 @@
 						<div class="product-info__content">
 							<div class="product-info__text">
 									<h2>The Tailor Made Boot Collection</h2>
-									<p>The art of boot making is deep routed in our philosophy - it's our namesake after all. Our Tailor Made collection celebrates the uniqueness of every woman, these knee boots are designed to fit your calf, leg and foot regardless of your shoe or dress size. Created in multiple calf widths, from <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=extra%20slim">extra slim to <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=slim">slim</a>, <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=standard">standard</a>, and <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=wider">wide fits.</a></p>
+									<p>The art of boot making is deep routed in our philosophy - it's our namesake after all. Our Tailor Made collection celebrates the uniqueness of every woman, these knee boots are designed to fit your calf, leg and foot regardless of your shoe or dress size. Created in multiple calf widths, from <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=extra%20slim">extra slim</a> to <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=slim">slim</a>, <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=standard">standard</a>, and <a href="https://www.jonesbootmaker.com/collections/tailor-made?calf=wider">wide fits.</a></p>
 									<h2>Find your calf fit</h2>
 									<p>Grab a tape measure and take a seat, with the help of our calf fitting guide …</p>
 									<p><strong>Step 1:</strong> Grab a fabric tape measure and take a seat with your feet flat on the floor and knees at a 90-degree angle.</p>
@@ -431,13 +478,55 @@
 			<div class="wrap">
 				<div class="footer__inner">
 					<div class="footer__newsletter">
-						<h4>Sign up to our newsletter</h4>
-						<p>Subscribe to receive regular news and offers from Jones Bootmaker. You can unsubscribe at any time.</p>
-						<input type="email" placeholder="Enter your email address" autocorrect="off" autocapitalize="off">
-						<div class="footer__newsletter__options">
-							<label><input type="checkbox" checked><span>Male</span></label>
-							<label><input type="checkbox" checked><span>Female</span></label>
-							<button><span>Sign up</span></button>
+						<form>
+							<h4>Sign up to our newsletter</h4>
+							<p>Subscribe to receive regular news and offers from Jones Bootmaker. You can unsubscribe at any time.</p>
+							<input type="email" placeholder="Enter your email address" autocorrect="off" autocapitalize="off">
+							<div class="footer__newsletter__options">
+								<label><input type="checkbox" checked><span>Male</span></label>
+								<label><input type="checkbox" checked><span>Female</span></label>
+								<button><span>Sign up</span></button>
+							</div>
+						</form>
+						<div class="footer__social">
+							<a href="#" class="branding"><img src="assets/logo.png" alt="Jones" /></a>
+							<p>Customer Services: <a href="#">0333 234 3342</a><br>Email: <a href="#">helpdesk@jonesbootmaker.com</a></p>
+							<ul>
+								<li>
+									<a href="#" target="_blank" aria-label="Pinterest">
+										<span>Pinterest</span>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+											<path d="M10,0C4.5,0,0,4.5,0,10c0,4.1,2.5,7.8,6.4,9.3c-0.1-1-0.1-1.9,0-2.9c0.2-0.8,1.2-5,1.2-5c-0.2-0.5-0.3-1-0.3-1.5c0-1.4,0.8-2.4,1.8-2.4c0.7,0,1.3,0.5,1.3,1.2c0,0.1,0,0.1,0,0.2c-0.2,1.1-0.5,2.2-0.8,3.3c-0.2,0.8,0.3,1.6,1,1.8c0.1,0,0.3,0.1,0.4,0c1.8,0,3.1-1.9,3.1-4.6c0.1-2.2-1.6-4-3.8-4.1c-0.1,0-0.2,0-0.4,0C7.6,5.4,5.5,7.2,5.4,9.6c0,0.1,0,0.1,0,0.2c0,0.8,0.3,1.6,0.7,2.3c0.1,0.1,0.1,0.2,0.1,0.3c-0.1,0.3-0.2,1-0.3,1.1c0,0.2-0.1,0.2-0.3,0.1c-1.2-0.6-2-2.4-2-3.9c0-3.2,2.3-6.1,6.6-6.1c3.2-0.2,6,2.3,6.2,5.6c0,0.1,0,0.1,0,0.2c0,3.4-2.2,6.2-5.2,6.2c-0.9,0-1.8-0.4-2.3-1.1c0,0-0.5,1.9-0.6,2.4C8,17.9,7.6,18.7,7,19.6c5.3,1.6,10.9-1.3,12.5-6.6c1.6-5.3-1.3-10.9-6.6-12.5C12,0.2,11,0,10,0z"></path>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" aria-label="Tiktok">
+										<span>Tiktok</span>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+											<path d="M15.2,3.5c-0.9-0.9-1.4-2.2-1.5-3.5c-1.1,0-2.2,0-3.3,0h0c0,3.4,0,6.7,0,10.1c0,1.5,0,3-0.1,4.5c0,0.3-0.2,0.6-0.3,0.9c-0.4,0.7-1.2,1.2-2,1.3c-1.6,0.2-3-0.8-3.3-2.4c-0.1-0.4,0-0.9,0.1-1.3c0,0,0,0,0,0c0.5-1.5,2.2-2.3,3.7-1.8c0-1.2,0-2.5,0-3.7c-0.1,0-0.3,0-0.4-0.1c-3.5-0.4-6.5,2.2-6.9,5.6c0,0.4,0,0.8,0,1.2c0.2,2,1.3,3.7,3,4.8c1,0.6,2.2,0.9,3.4,0.9c2-0.1,3.8-1,4.9-2.7c0.7-1,1.1-2.1,1.1-3.3c0-2.4,0-4.9,0-7.3c0.4,0.3,0.9,0.6,1.4,0.8c1.1,0.5,2.3,0.8,3.5,0.8V5C17.4,4.9,16.1,4.4,15.2,3.5z"></path>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" aria-label="Facebook">
+										<span>Facebook</span>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+											<path d="M10,0C4.5,0,0,4.5,0,10c0,4.9,3.6,9.1,8.4,9.9v-7H5.9V10h2.5V7.8c-0.2-1.9,1.2-3.7,3.1-3.9c0.2,0,0.4,0,0.6,0c0.7,0,1.5,0.1,2.2,0.2v2.5h-1.3c-0.8-0.1-1.5,0.5-1.6,1.2c0,0.1,0,0.2,0,0.3V10h2.8l-0.4,2.9h-2.3v7c4.9-0.8,8.4-5,8.4-9.9C20,4.5,15.5,0,10,0z"></path>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" aria-label="Instagram">
+										<span>Instagram</span>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+											<path d="M10,4.9c-2.8,0-5.1,2.3-5.1,5.1c0,0,0,0,0,0c0,2.8,2.3,5.1,5.1,5.1c2.8,0,5.1-2.3,5.1-5.1C15.1,7.1,12.8,4.9,10,4.9z M10,13.3c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3C13.3,11.8,11.8,13.3,10,13.3z"></path>
+											<path d="M15.3,3.5c-0.7,0-1.2,0.5-1.2,1.2c0,0.7,0.5,1.2,1.2,1.2c0.7,0,1.2-0.5,1.2-1.2C16.5,4,16,3.5,15.3,3.5z"></path>
+											<path d="M20,10c0-2.7,0-3.1-0.1-4.1c0-0.8-0.2-1.6-0.5-2.4c-0.3-0.7-0.6-1.3-1.2-1.8c-0.5-0.5-1.1-0.9-1.8-1.1c-0.8-0.3-1.6-0.4-2.4-0.5C13,0,12.7,0,10,0C7.3,0,6.9,0,5.9,0.1C5,0.1,4.2,0.2,3.4,0.5C2.8,0.8,2.2,1.2,1.7,1.7C1.2,2.2,0.8,2.8,0.5,3.5C0.2,4.2,0.1,5.1,0.1,5.9C0,7,0,7.3,0,10c0,2.7,0,3.1,0.1,4.1c0,0.8,0.2,1.6,0.5,2.4c0.3,0.7,0.6,1.3,1.2,1.8c0.5,0.5,1.1,0.9,1.8,1.1c0.8,0.3,1.6,0.4,2.4,0.5C7,20,7.3,20,10,20c2.7,0,3.1,0,4.1-0.1c0.8,0,1.6-0.2,2.4-0.5c1.3-0.5,2.4-1.6,2.9-2.9c0.3-0.8,0.4-1.6,0.5-2.4C20,13,20,12.7,20,10z M18.1,14c0,0.6-0.1,1.3-0.3,1.9c-0.3,0.9-1,1.6-1.9,1.9c-0.6,0.2-1.2,0.3-1.9,0.3c-1.1,0.1-1.4,0.1-4,0.1c-2.7,0-3,0-4-0.1l0,0c-0.6,0-1.3-0.1-1.9-0.3C3.7,17.6,3.3,17.4,3,17c-0.3-0.3-0.6-0.7-0.8-1.1C2,15.3,1.9,14.7,1.9,14c0-1.1-0.1-1.4-0.1-4c0-2.7,0-3,0-4c0-0.6,0.1-1.3,0.3-1.9C2.4,3.7,2.6,3.3,2.9,3c0.3-0.3,0.7-0.6,1.1-0.7C4.7,2,5.3,1.9,5.9,1.9c1.1,0,1.4-0.1,4-0.1c2.7,0,3,0,4,0.1c0.6,0,1.3,0.1,1.9,0.3c0.4,0.2,0.8,0.4,1.2,0.7c0.3,0.3,0.6,0.7,0.8,1.1c0.2,0.6,0.3,1.2,0.3,1.9c0,1.1,0.1,1.4,0.1,4S18.2,13,18.1,14z"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="footer__menus">
@@ -484,46 +573,6 @@
 								<li><a href="/pages/pavers-gender-pay-report">Gender Pay Report</a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="footer__social">
-						<a href="#" class="branding"><img src="assets/logo.png" alt="Jones" /></a>
-						<p>Customer Services: <a href="#">0333 234 3342</a><br>Email: <a href="#">helpdesk@jonesbootmaker.com</a></p>
-						<ul>
-							<li>
-								<a href="#" target="_blank" aria-label="Pinterest">
-									<span>Pinterest</span>
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
-										<path d="M10,0C4.5,0,0,4.5,0,10c0,4.1,2.5,7.8,6.4,9.3c-0.1-1-0.1-1.9,0-2.9c0.2-0.8,1.2-5,1.2-5c-0.2-0.5-0.3-1-0.3-1.5c0-1.4,0.8-2.4,1.8-2.4c0.7,0,1.3,0.5,1.3,1.2c0,0.1,0,0.1,0,0.2c-0.2,1.1-0.5,2.2-0.8,3.3c-0.2,0.8,0.3,1.6,1,1.8c0.1,0,0.3,0.1,0.4,0c1.8,0,3.1-1.9,3.1-4.6c0.1-2.2-1.6-4-3.8-4.1c-0.1,0-0.2,0-0.4,0C7.6,5.4,5.5,7.2,5.4,9.6c0,0.1,0,0.1,0,0.2c0,0.8,0.3,1.6,0.7,2.3c0.1,0.1,0.1,0.2,0.1,0.3c-0.1,0.3-0.2,1-0.3,1.1c0,0.2-0.1,0.2-0.3,0.1c-1.2-0.6-2-2.4-2-3.9c0-3.2,2.3-6.1,6.6-6.1c3.2-0.2,6,2.3,6.2,5.6c0,0.1,0,0.1,0,0.2c0,3.4-2.2,6.2-5.2,6.2c-0.9,0-1.8-0.4-2.3-1.1c0,0-0.5,1.9-0.6,2.4C8,17.9,7.6,18.7,7,19.6c5.3,1.6,10.9-1.3,12.5-6.6c1.6-5.3-1.3-10.9-6.6-12.5C12,0.2,11,0,10,0z"></path>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank" aria-label="Tiktok">
-									<span>Tiktok</span>
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
-										<path d="M15.2,3.5c-0.9-0.9-1.4-2.2-1.5-3.5c-1.1,0-2.2,0-3.3,0h0c0,3.4,0,6.7,0,10.1c0,1.5,0,3-0.1,4.5c0,0.3-0.2,0.6-0.3,0.9c-0.4,0.7-1.2,1.2-2,1.3c-1.6,0.2-3-0.8-3.3-2.4c-0.1-0.4,0-0.9,0.1-1.3c0,0,0,0,0,0c0.5-1.5,2.2-2.3,3.7-1.8c0-1.2,0-2.5,0-3.7c-0.1,0-0.3,0-0.4-0.1c-3.5-0.4-6.5,2.2-6.9,5.6c0,0.4,0,0.8,0,1.2c0.2,2,1.3,3.7,3,4.8c1,0.6,2.2,0.9,3.4,0.9c2-0.1,3.8-1,4.9-2.7c0.7-1,1.1-2.1,1.1-3.3c0-2.4,0-4.9,0-7.3c0.4,0.3,0.9,0.6,1.4,0.8c1.1,0.5,2.3,0.8,3.5,0.8V5C17.4,4.9,16.1,4.4,15.2,3.5z"></path>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank" aria-label="Facebook">
-									<span>Facebook</span>
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
-										<path d="M10,0C4.5,0,0,4.5,0,10c0,4.9,3.6,9.1,8.4,9.9v-7H5.9V10h2.5V7.8c-0.2-1.9,1.2-3.7,3.1-3.9c0.2,0,0.4,0,0.6,0c0.7,0,1.5,0.1,2.2,0.2v2.5h-1.3c-0.8-0.1-1.5,0.5-1.6,1.2c0,0.1,0,0.2,0,0.3V10h2.8l-0.4,2.9h-2.3v7c4.9-0.8,8.4-5,8.4-9.9C20,4.5,15.5,0,10,0z"></path>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank" aria-label="Instagram">
-									<span>Instagram</span>
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
-										<path d="M10,4.9c-2.8,0-5.1,2.3-5.1,5.1c0,0,0,0,0,0c0,2.8,2.3,5.1,5.1,5.1c2.8,0,5.1-2.3,5.1-5.1C15.1,7.1,12.8,4.9,10,4.9z M10,13.3c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3C13.3,11.8,11.8,13.3,10,13.3z"></path>
-										<path d="M15.3,3.5c-0.7,0-1.2,0.5-1.2,1.2c0,0.7,0.5,1.2,1.2,1.2c0.7,0,1.2-0.5,1.2-1.2C16.5,4,16,3.5,15.3,3.5z"></path>
-										<path d="M20,10c0-2.7,0-3.1-0.1-4.1c0-0.8-0.2-1.6-0.5-2.4c-0.3-0.7-0.6-1.3-1.2-1.8c-0.5-0.5-1.1-0.9-1.8-1.1c-0.8-0.3-1.6-0.4-2.4-0.5C13,0,12.7,0,10,0C7.3,0,6.9,0,5.9,0.1C5,0.1,4.2,0.2,3.4,0.5C2.8,0.8,2.2,1.2,1.7,1.7C1.2,2.2,0.8,2.8,0.5,3.5C0.2,4.2,0.1,5.1,0.1,5.9C0,7,0,7.3,0,10c0,2.7,0,3.1,0.1,4.1c0,0.8,0.2,1.6,0.5,2.4c0.3,0.7,0.6,1.3,1.2,1.8c0.5,0.5,1.1,0.9,1.8,1.1c0.8,0.3,1.6,0.4,2.4,0.5C7,20,7.3,20,10,20c2.7,0,3.1,0,4.1-0.1c0.8,0,1.6-0.2,2.4-0.5c1.3-0.5,2.4-1.6,2.9-2.9c0.3-0.8,0.4-1.6,0.5-2.4C20,13,20,12.7,20,10z M18.1,14c0,0.6-0.1,1.3-0.3,1.9c-0.3,0.9-1,1.6-1.9,1.9c-0.6,0.2-1.2,0.3-1.9,0.3c-1.1,0.1-1.4,0.1-4,0.1c-2.7,0-3,0-4-0.1l0,0c-0.6,0-1.3-0.1-1.9-0.3C3.7,17.6,3.3,17.4,3,17c-0.3-0.3-0.6-0.7-0.8-1.1C2,15.3,1.9,14.7,1.9,14c0-1.1-0.1-1.4-0.1-4c0-2.7,0-3,0-4c0-0.6,0.1-1.3,0.3-1.9C2.4,3.7,2.6,3.3,2.9,3c0.3-0.3,0.7-0.6,1.1-0.7C4.7,2,5.3,1.9,5.9,1.9c1.1,0,1.4-0.1,4-0.1c2.7,0,3,0,4,0.1c0.6,0,1.3,0.1,1.9,0.3c0.4,0.2,0.8,0.4,1.2,0.7c0.3,0.3,0.6,0.7,0.8,1.1c0.2,0.6,0.3,1.2,0.3,1.9c0,1.1,0.1,1.4,0.1,4S18.2,13,18.1,14z"></path>
-									</svg>
-								</a>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>

@@ -14,6 +14,9 @@ const initializeImageLoad = function () {
 		image.onload = () => {
 			image.removeAttribute('data-src');
 			image.classList.remove('preload');
+			image.parentNode.classList.remove('preload');
+			image.parentNode.parentNode.classList.remove('preload');
+			image.parentNode.parentNode.parentNode.classList.remove('preload');
 		};
 	};
 	if ('IntersectionObserver' in window) {
@@ -57,6 +60,7 @@ for (let option of variantOptions) {
 	for (let label of labels) {
 		label.addEventListener('click', e => {
 			e.preventDefault();
+			if (label.classList.contains('disabled')) return;
 			if (label.classList.contains('active')) return;
 			for (let label of labels) label.classList.remove('active');
 			label.classList.add('active');
@@ -70,4 +74,13 @@ for (let title of accordionTitles)
 		e.preventDefault();
 		const parent = title.parentNode;
 		parent.classList.toggle('open');
+	});
+
+const ModalToggles = document.querySelectorAll('.modal-toggle, .modal__mask');
+for (let toggle of ModalToggles)
+	toggle.addEventListener('click', e => {
+		e.preventDefault();
+		const docBody = document.querySelector('body');
+		docBody.classList.toggle('no-overflow');
+		docBody.classList.toggle('modal-open');
 	});

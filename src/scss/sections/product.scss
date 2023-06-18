@@ -74,6 +74,7 @@
 			ins {
 				border: none;
 				font-weight: $font-bold;
+				color: $spot;
 			}
 		}
 		&__laybuy {
@@ -108,7 +109,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1em;
-			margin-bottom: 2em;
+			margin-bottom: 1em;
 		}
 		&__variant {
 			.variant-title {
@@ -125,7 +126,7 @@
 			.variant-option {
 				button {
 					appearance: none;
-					font: 1em $font-family;
+					font: 1em $font-base;
 					background-color: transparent;
 					display: block;
 					width: 3.5em;
@@ -151,6 +152,13 @@
 					border-radius: $radius;
 					cursor: pointer;
 					transition: $transition;
+					&.disabled {
+						color: $grey;
+						border-color: $grey;
+						&:hover {
+							border-color: $grey;
+						}
+					}
 					&:hover,
 					&:focus {
 						border-color: $grey-darker;
@@ -167,13 +175,37 @@
 				}
 			}
 		}
+		&__guide {
+			margin-bottom: 1em;
+			button {
+				font: 1em $font-base;
+				text-decoration: underline;
+				background-color: transparent;
+				border: none;
+				font-size: 0.875em;
+				display: flex;
+				align-items: center;
+				gap: 0.35em;
+				white-space: nowrap;
+				cursor: pointer;
+				svg {
+					width: 1.25em;
+					height: 1.25em;
+					fill: none;
+					stroke: $black;
+					stroke-linecap: round;
+					stroke-linejoin: round;
+					stroke-width: 2px;
+				}
+			}
+		}
 		&__actions {
 			display: grid;
 			grid-template-columns: 1fr auto;
 			gap: 0.5em;
 			margin-bottom: 1.5em;
 			button {
-				font: 1em $font-family;
+				font: 1em $font-base;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -181,10 +213,6 @@
 				border-radius: $radius;
 				transition: $transition;
 				height: 2.75em;
-				&:hover,
-				&:focus {
-					background-color: $spot-accent;
-				}
 				span {
 					text-transform: uppercase;
 					font-weight: $font-bold;
@@ -193,9 +221,13 @@
 			}
 			.add-to-cart {
 				width: 100%;
-				background-color: $spot;
+				background-color: $cta;
 				color: $white;
 				border: none;
+				&:hover,
+				&:focus {
+					background-color: $cta-accent;
+				}
 			}
 			.add-to-wishlist {
 				width: 3.5em;
@@ -212,8 +244,8 @@
 					border-color: $grey-dark;
 				}
 				svg {
-					width: 1.75em;
-					height: 1.75em;
+					width: 1.25em;
+					height: 1.25em;
 					fill: $grey-dark;
 					transition: $transition;
 				}
@@ -241,6 +273,52 @@
 			font-size: 0.85em;
 			margin-bottom: 2em;
 		}
+		&__imbox {
+			margin-bottom: 2em;
+			.imbox {
+				border: 1px solid $grey-darker;
+				border-radius: $radius;
+				padding: 1.5em;
+				&__option {
+					margin-bottom: 1.25em;
+					label {
+						display: flex;
+						gap: 0.5em;
+						align-items: center;
+					}
+					span {
+						display: block;
+						font-size: 0.875em;
+						font-weight: $font-bold;
+					}
+				}
+				&__details {
+					display: grid;
+					grid-template-columns: 3em 1fr;
+					gap: 1.25em;
+					p,
+					ul {
+						font-size: 0.825em;
+					}
+					p {
+						margin-bottom: 1em;
+						&:last-of-type {
+							margin: 0;
+						}
+					}
+					ul {
+						margin-left: 2em;
+						margin-bottom: 1em;
+						list-style: disc;
+					}
+					&__images {
+						display: flex;
+						flex-direction: column;
+						gap: 1.5em;
+					}
+				}
+			}
+		}
 		&__accordions {
 			.accordion {
 				&.open {
@@ -262,7 +340,7 @@
 					border-bottom: 1px solid $grey-dark;
 				}
 				.accordion-title {
-					font: 1em $font-family;
+					font: 1em $font-base;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;

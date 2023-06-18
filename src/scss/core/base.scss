@@ -4,8 +4,8 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background: $white;
-	font: 16px $font-family;
+	background: $grey;
+	font: 16px $font-base;
 	color: $black;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
@@ -14,6 +14,14 @@ body {
 	@media screen and (max-width: $w-s) {
 		font-size: 3.33333vw;
 	}
+	&.no-overflow {
+		overflow-y: hidden;
+	}
+	&.modal-open {
+		.modal {
+			display: block;
+		}
+	}
 }
 h1,
 h2,
@@ -21,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-	font: 1em $font-family;
+	font: 1em $font-base;
 	font-weight: $font-bold;
 	margin: 0;
 	color: $black;

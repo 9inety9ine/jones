@@ -3,7 +3,8 @@
 .related {
 	position: relative;
 	border-top: 1px solid $grey;
-	padding: 3em 0;
+	padding: 4em 0;
+	background-color: $grey-light;
 	&__header {
 		h3 {
 			font-size: 1.75em;

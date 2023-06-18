@@ -6,6 +6,9 @@
 	height: $height-header;
 	display: flex;
 	align-items: center;
+	text-transform: uppercase;
+	font-weight: $font-medium;
+	line-height: 1;
 	&__inner {
 		height: $height-header;
 		display: grid;
@@ -18,7 +21,7 @@
 			text-decoration: none;
 		}
 	}
-	&__extras {
+	&__entry {
 		height: $height-header;
 		display: flex;
 		justify-content: flex-start;
@@ -29,6 +32,10 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		img {
+			width: 5em;
+			height: auto;
+		}
 		nav,
 		ul,
 		li,
@@ -37,6 +44,7 @@
 			display: flex;
 			align-items: center;
 			height: $height-header;
+			gap: 0.25em;
 		}
 		nav {
 			height: fit-content;
@@ -45,6 +53,20 @@
 			display: flex;
 			gap: 1em;
 			align-items: center;
+		}
+		svg {
+			width: 1em;
+			height: 1em;
+			display: block;
+			line-height: 1;
+			fill: none;
+			stroke: $black;
+			stroke-width: 3px;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+			position: relative;
+			top: -1px;
 		}
 		&--extras {
 			justify-content: flex-start;

@@ -1,7 +1,7 @@
 @import '../core/variables';
 
 .product {
-	padding: 3em 0;
+	padding: 4em 0;
 	&__inner {
 		display: grid;
 		grid-template-columns: 55% 1fr;
@@ -15,9 +15,11 @@
 		}
 	}
 	&__media {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1em;
+		&__images {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1em;
+		}
 		.large {
 			grid-column: 1 / span 2;
 		}

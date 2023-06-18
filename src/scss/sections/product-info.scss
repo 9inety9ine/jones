@@ -1,0 +1,45 @@
+@import '../core/variables';
+
+.product-info {
+	padding: 4em 0;
+	position: relative;
+	background-color: $white;
+	border-top: 1px solid $grey;
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4em;
+		position: relative;
+		top: 0;
+		opacity: 1;
+		transition-property: top, opacity;
+		transition-duration: 0.25s;
+		transition-timing-function: ease-out;
+		&.preload {
+			padding: 0;
+			top: 1em;
+			opacity: 0;
+		}
+	}
+	&__image {
+		img {
+			width: 100%;
+			height: auto;
+			padding: 1em;
+			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+			border-radius: $radius;
+			background-color: $white;
+		}
+	}
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			font-size: 1.5em;
+		}
+		p {
+			font-size: 0.875em;
+		}
+	}
+}

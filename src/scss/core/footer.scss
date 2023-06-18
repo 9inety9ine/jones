@@ -1,3 +1,120 @@
 .footer {
-	padding: 3em 0;
+	padding: 4em 0 6em 0;
+	border-top: 1px solid $grey-dark;
+	&__inner {
+		display: grid;
+		grid-template-columns: 20em 1fr auto;
+		gap: 4em;
+	}
+	h4 {
+		font-size: 1em;
+		text-transform: capitalize;
+		margin-bottom: 0.25em;
+	}
+	&__newsletter {
+		p {
+			font-size: 0.875em;
+			margin-bottom: 0.75em;
+		}
+		&__options {
+			display: flex;
+			align-items: flex-start;
+			gap: 1em;
+			padding-top: 0.75em;
+			label {
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+				line-height: 1;
+			}
+			span {
+				font-size: 0.825em;
+			}
+			button {
+				font: 1em $font-base;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				border-radius: $radius;
+				transition: $transition;
+				height: 2.5em;
+				padding: 0 1.5em;
+				border: none;
+				background-color: $black;
+				margin-left: auto;
+				color: $white;
+				span {
+					text-transform: uppercase;
+					font-weight: $font-bold;
+					font-size: 0.825em;
+					line-height: 1;
+				}
+				&:hover,
+				&:focus {
+					background-color: $black-accent;
+				}
+			}
+		}
+	}
+	&__menus {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2em;
+		h4 {
+			padding-bottom: 0.5em;
+			margin-bottom: 0.35em;
+			border-bottom: 1px solid $grey-darker;
+		}
+		li {
+			white-space: nowrap;
+			a {
+				font-size: 0.825em;
+				text-decoration: none;
+				&:hover,
+				&:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	&__social {
+		.branding {
+			display: inline-block;
+			width: 7em;
+			margin-bottom: 1.25em;
+		}
+		h4 {
+			margin-bottom: 0.25em;
+		}
+		p {
+			font-size: 0.875em;
+		}
+		ul {
+			display: flex;
+			gap: 1em;
+			margin-top: 1.5em;
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				span {
+					display: none;
+				}
+			}
+			svg {
+				width: 1.25em;
+				height: auto;
+				fill: $black;
+				polygon {
+					fill: $white;
+				}
+				.overlay {
+					fill: none;
+					stroke: $black;
+					stroke-width: 2px;
+				}
+			}
+		}
+	}
 }

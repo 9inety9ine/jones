@@ -4,7 +4,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background: $grey;
+	background: $grey-light;
 	font: 16px $font-base;
 	color: $black;
 	line-height: 1.5;
@@ -35,14 +35,10 @@ h6 {
 	color: $black;
 	line-height: 1.25;
 }
-h1 {
+h1,
+h2 {
 	font-size: 1.75em;
 	margin-bottom: 0.35em;
-}
-h2 {
-	font-size: 2.5em;
-	margin-bottom: 0.75em;
-	font-weight: $font-medium;
 }
 h3 {
 	font-weight: $font-bold;
@@ -96,4 +92,66 @@ header,
 img,
 label {
 	-webkit-tap-highlight-color: transparent;
+}
+::placeholder {
+	font: 1em $font-base;
+	color: $black;
+	opacity: 0.3;
+}
+
+:-ms-input-placeholder {
+	font: 1em $font-base;
+	color: $black;
+	opacity: 0.3;
+}
+
+::-ms-input-placeholder {
+	font: 1em $font-base;
+	color: $black;
+	opacity: 0.3;
+}
+
+input[type='checkbox'] {
+	appearance: none;
+	width: 1.25em;
+	height: 1.25em;
+	min-width: 1.25em;
+	min-height: 1.25em;
+	border: 1px solid $grey-darker;
+	border-radius: $radius;
+	background-color: $white;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+		border-color: $grey-darker;
+		background-color: $white;
+	}
+	&:checked {
+		background: $white url(icon-check.svg) no-repeat 50% 50% / 0.75em;
+		border-color: $grey-darker;
+		background-color: $white;
+	}
+}
+
+input[type='email'] {
+	font: 1em $font-base;
+	display: flex;
+	height: 2.5em;
+	padding: 0 0.75em;
+	align-items: center;
+	background-color: $white;
+	width: 100%;
+	border: 1px solid $grey-darker;
+	appearance: none;
+	color: $black;
+	border-radius: $radius;
+	&:focus {
+		outline: none;
+		border-color: $black;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		background-color: $white;
+	}
+	&:disabled {
+		opacity: 0.75;
+	}
 }

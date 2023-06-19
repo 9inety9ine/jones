@@ -1,0 +1,1 @@
+.breadcrumbs{padding:.5em 0;border-bottom:1px solid #fafafa}.breadcrumbs ol{display:flex;gap:.5em}.breadcrumbs ol li::after{content:'>';position:relative;top:2px;margin-left:.5em}.breadcrumbs ol li:last-of-type::after{display:none}.breadcrumbs ol span{font-size:.75em}

@@ -1,0 +1,26 @@
+@import '../core/variables';
+
+.breadcrumbs {
+	padding: 0.5em 0;
+	border-bottom: 1px solid $grey-light;
+	ol {
+		display: flex;
+		gap: 0.5em;
+		li {
+			&::after {
+				content: '>';
+				position: relative;
+				top: 2px;
+				margin-left: 0.5em;
+			}
+			&:last-of-type {
+				&::after {
+					display: none;
+				}
+			}
+		}
+		span {
+			font-size: 0.75em;
+		}
+	}
+}

@@ -18,6 +18,7 @@
 			grid-template-columns: 1fr;
 			grid-template-rows: auto 1fr;
 			gap: 2em;
+			overflow: hidden;
 		}
 		.sticker {
 			position: absolute;
@@ -27,37 +28,97 @@
 		}
 	}
 	&__media {
+		@media (max-width: $w-m) {
+			width: 100%;
+			max-width: 100%;
+			overflow: visible;
+			border: 1px solid $grey;
+			border-radius: $radius;
+			overflow: hidden;
+			position: relative;
+		}
 		&__images {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 1em;
+			@media (max-width: $w-m) {
+				width: 100%;
+				max-width: 100%;
+			}
+			.swiper,
+			.swiper-wrapper,
+			.swiper-slide {
+				@media (min-width: 769px) {
+					all: unset;
+				}
+			}
+			.swiper-slide {
+				@media (max-width: $w-m) {
+					width: 100% !important;
+					max-width: 100% !important;
+					height: auto;
+				}
+			}
+			.swiper-wrapper {
+				@media (min-width: 769px) {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 1em;
+				}
+			}
 		}
 		.large {
 			grid-column: 1 / span 2;
 		}
-		.zoom-wrapper {
-			padding: 1em;
-			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+		.image-wrapper {
 			border-radius: $radius;
+			top: 0;
+			opacity: 1;
+			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+			transition-property: top, opacity;
+			transition-duration: 0.25s;
+			transition-timing-function: ease-out;
+			position: relative;
+			@media (max-width: $w-m) {
+				display: inline-block;
+				box-shadow: none;
+				padding: 1em;
+				background: $white !important;
+			}
+			&.preload {
+				top: 1em;
+				opacity: 0;
+			}
 			&:hover {
 				img {
-					opacity: 0;
+					@media (min-width: 769px) {
+						opacity: 0;
+					}
 				}
 			}
 		}
 		img {
 			width: 100%;
 			height: auto;
-			top: 0;
-			opacity: 1;
-			transition-property: top, opacity;
-			transition-duration: 0.25s;
-			transition-timing-function: ease-out;
-			position: relative;
-			&.preload {
-				padding: 0;
-				top: 1em;
-				opacity: 0;
+			@media (min-width: 769px) {
+				padding: 1em;
+				background-color: $white;
+			}
+		}
+		.button-slider {
+			display: none;
+			@media (max-width: $w-m) {
+				display: block;
+				background: transparent url(arrow-left-dark.svg) no-repeat 50% 50% / 2em;
+				width: 2em;
+				height: 5em;
+				position: absolute;
+				z-index: 7;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				&--next {
+					left: auto;
+					right: 0;
+					background: transparent url(arrow-right-dark.svg) no-repeat 50% 50% / 2em;
+				}
 			}
 		}
 	}
@@ -246,6 +307,7 @@
 				background-color: $cta;
 				color: $white;
 				border: none;
+				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
 				&:hover,
 				&:focus {
 					background-color: $cta-accent;
@@ -318,6 +380,10 @@
 					display: grid;
 					grid-template-columns: 3em 1fr;
 					gap: 1.25em;
+					img {
+						width: 100%;
+						height: auto;
+					}
 					p,
 					ul {
 						font-size: 0.825em;

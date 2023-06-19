@@ -43,6 +43,10 @@
 			display: inline-block;
 			width: 7em;
 			margin-bottom: 0.75em;
+			img {
+				width: 100%;
+				height: auto;
+			}
 		}
 		p {
 			font-size: 0.875em;

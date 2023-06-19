@@ -10,7 +10,170 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
 		<link href="//fonts.googleapis.com" rel="preconnect" />
 		<link href="//fonts.gstatic.com" rel="preconnect" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet" />
+		<style>
+			/* devanagari */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVFteOcEg.woff2) format('woff2');
+			unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+			}
+			/* latin-ext */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVGdeOcEg.woff2) format('woff2');
+			unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+			/* latin */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLm21lVF9eO.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			/* devanagari */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucXtAKPY.woff2) format('woff2');
+			unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+			}
+			/* latin-ext */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLufntAKPY.woff2) format('woff2');
+			unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+			/* latin */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrJJLucHtA.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			/* devanagari */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 600;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VFteOcEg.woff2) format('woff2');
+			unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+			}
+			/* latin-ext */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 600;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VGdeOcEg.woff2) format('woff2');
+			unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+			/* latin */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: italic;
+			font-weight: 600;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			/* devanagari */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+			unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+			}
+			/* latin-ext */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+			unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+			/* latin */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			/* devanagari */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+			unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+			}
+			/* latin-ext */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+			unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+			/* latin */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			/* devanagari */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+			unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+			}
+			/* latin-ext */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+			unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+			/* latin */
+			@font-face {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+		</style>
 		<link rel="stylesheet" href="assets/main.css" />
 		<meta name="robots" content="noindex">
 	</head>
@@ -23,7 +186,7 @@
 						<nav>
 							<ul>
 								<li>
-									<a href="#" aria-label="Inspire Me"><img class="inspire-logo" src="https://cdn.shopify.com/s/files/1/0003/4108/2175/files/INSPIREme2.jpg" /></a>
+									<a href="#" aria-label="Inspire Me"><img class="inspire-logo" src="assets/inspire-me.jpg" alt="Inspire Me" width="200" height="44" /></a>
 								</li>
 								<li>
 									<a href="#" aria-label="Gift Cards">
@@ -86,7 +249,7 @@
 						</button>
 					</div>
 					<div class="header__branding">
-						<a href="#" aria-label="Jones Homepage"><img src="assets/logo.png" alt="Jones" /></a>
+						<a href="#" aria-label="Jones Homepage"><img src="assets/logo.png" alt="Jones" width="388" height="117" /></a>
 					</div>
 					<div class="header__menu header__menu--main">
 						<nav>
@@ -147,54 +310,72 @@
 		</header>
 		<main>
 			<section class="product" itemscope itemtype="http://schema.org/Product">
+				<link href="assets/swiper.css" rel="stylesheet" />
 				<link href="assets/product.css" rel="stylesheet" />
 				<div class="wrap">
 					<div class="product__inner">
 						<img src="assets/sale.png" alt="Sale" class="sticker" />
 						<div class="product__media">
 							<div class="product__media__images">
-								<div class="zoom-wrapper large">
-									<div class="zoom" style="background-image: url(assets/product-1.jpg)" onmousemove="zoom(event)">
-										<img src="assets/placeholder.png" data-src="assets/product-1.jpg" alt="Product 1" width="1000" height="1000" class="preload" itemprop="image" />
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide image-wrapper large preload" style="background: url(assets/product-1.jpg)">
+											<img src="assets/placeholder.png" data-src="assets/product-1.jpg" alt="Product 1" width="1000" height="1000" itemprop="image" />
+										</div>
+										<div class="swiper-slide image-wrapper preload" style="background: url(assets/product-2.jpg)">
+											<img src="assets/placeholder.png" data-src="assets/product-2.jpg" alt="Product 2" width="1000" height="1000" />
+										</div>
+										<div class="swiper-slide image-wrapper preload" style="background: url(assets/product-3.jpg)">
+											<img src="assets/placeholder.png" data-src="assets/product-3.jpg" alt="Product 2" width="1000" height="1000" />
+										</div>
+										<div class="swiper-slide image-wrapper preload" style="background: url(assets/product-4.jpg)">
+											<img src="assets/placeholder.png" data-src="assets/product-4.jpg" alt="Product 2" width="1000" height="1000" />
+										</div>
+										<div class="swiper-slide image-wrapper preload" style="background: url(assets/product-5.jpg)">
+											<img src="assets/placeholder.png" data-src="assets/product-5.jpg" alt="Product 2" width="1000" height="1000" />
+										</div>
 									</div>
 								</div>
-								<div class="zoom-wrapper">
-									<div class="zoom" style="background-image: url(assets/product-2.jpg)" onmousemove="zoom(event)">
-										<img src="assets/placeholder.png" data-src="assets/product-2.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
-									</div>
-								</div>
-								<div class="zoom-wrapper">
-									<div class="zoom" style="background-image: url(assets/product-3.jpg)" onmousemove="zoom(event)">
-										<img src="assets/placeholder.png" data-src="assets/product-3.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
-									</div>
-								</div>
-								<div class="zoom-wrapper">
-									<div class="zoom" style="background-image: url(assets/product-4.jpg)" onmousemove="zoom(event)">
-										<img src="assets/placeholder.png" data-src="assets/product-4.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
-									</div>
-								</div>
-								<div class="zoom-wrapper">
-									<div class="zoom" style="background-image: url(assets/product-5.jpg)" onmousemove="zoom(event)">
-										<img src="assets/placeholder.png" data-src="assets/product-5.jpg" alt="Product 2" width="1000" height="1000" class="preload" />
-									</div>
-								</div>
+								<div class="button-slider button-slider--prev" aria-label="Previous Slide"></div>
+  								<div class="button-slider button-slider--next" aria-label="Next Slide"></div>
 							</div>
+							<script src="assets/swiper.js"></script>
 							<script>
-								const zoom = e => {
-									var zoomer = e.currentTarget;
-									offsetX = e.offsetX;
-									offsetY = e.offsetY;
-									x = (offsetX / zoomer.offsetWidth) * 100;
-									y = (offsetY / zoomer.offsetHeight) * 100;
-									zoomer.style.backgroundPosition = x + '% ' + y + '%';
-								};
+								if (window.innerWidth <= 768 ){
+									const swiper = new Swiper('.swiper', {
+										loop: true,
+										slidesPerView: 1,
+										speed: 500,
+										spaceBetween: 0,
+										navigation: {
+											nextEl: '.button-slider--next',
+											prevEl: '.button-slider--prev',
+										}
+									});
+									swiper.on('slideChange', function () {
+										window.initializeImageLoad();
+									});
+								} else {
+									const images = document.querySelectorAll('.image-wrapper')
+									if (images) {
+										for (let image of images) {
+											image.addEventListener('mousemove', e => {
+												offsetX = e.offsetX;
+												offsetY = e.offsetY;
+												x = (offsetX / image.offsetWidth) * 100;
+												y = (offsetY / image.offsetHeight) * 100;
+												image.style.backgroundPosition = x + '% ' + y + '%';
+											})
+										}
+									}
+								}
 							</script>
 						</div>
 						<div class="product__info">
 							<div class="product__info__brand-reviews">
 								<div class="product__info__brand" itemprop="brand">Jones Bootmaker</div>
 								<div class="product__info__reviews">
-									<img src="assets/reviews.png" alt="Reviews" />
+									<img src="assets/reviews.png" alt="Reviews" width="160" height="15" />
 								</div>
 							</div>
 							<div class="product__info__title">
@@ -212,7 +393,7 @@
 											<span class="money laybuy-money">£8.16</span>
 										</span>
 										<span class="laybuy-text3"> with </span>
-										<img src="https://www.laybuy.com/assets/laybuy-logo-small.svg" id="laybuy-logo" alt="Laybuy" />
+										<img src="https://www.laybuy.com/assets/laybuy-logo-small.svg" id="laybuy-logo" alt="Laybuy" width="57" height="18" />
 										<a class="laybuy-link" href="https://www.laybuy.com/how-it-works" target="_blank">
 											<u class="laybuy-link-inner">what's this?</u>
 										</a>
@@ -226,13 +407,13 @@
 									</div>
 									<div class="variant-options">
 										<div class="variant-option variant-option--1">
-											<button class="active" style="background: url(assets/variant-1.jpg) no-repeat 50% 50% / 2.75em"></button>
+											<button class="active" style="background: url(assets/variant-1.jpg) no-repeat 50% 50% / 2.75em" aria-label="Colour 1"></button>
 										</div>
 										<div class="variant-option variant-option--2">
-											<button style="background: url(assets/variant-2.jpg) no-repeat 50% 50% / 2.75em"></button>
+											<button style="background: url(assets/variant-2.jpg) no-repeat 50% 50% / 2.75em" aria-label="Colour 2"></button>
 										</div>
 										<div class="variant-option variant-option--3">
-											<button style="background: url(assets/variant-3.jpg) no-repeat 50% 50% / 2.75em"></button>
+											<button style="background: url(assets/variant-3.jpg) no-repeat 50% 50% / 2.75em" aria-label="Colour 3"></button>
 										</div>
 									</div>
 								</div>
@@ -242,25 +423,25 @@
 									</div>
 									<div class="variant-options">
 										<div class="variant-option variant-option--1">
-											<label class="active"><span>6/40</span><input type="radio" name="size" checked /></label>
+											<label class="active" for="6/40"><span>6/40</span><input type="radio" name="size" checked id="6/40" /></label>
 										</div>
 										<div class="variant-option variant-option--2">
-											<label><span>7/41</span><input type="radio" name="size" /></label>
+											<label for="7/41"><span>7/41</span><input type="radio" name="size" id="7/41" /></label>
 										</div>
 										<div class="variant-option variant-option--2">
-											<label><span>8/42</span><input type="radio" name="size" /></label>
+											<label for=""><span>8/42</span><input type="radio" name="size" id="8/42" /></label>
 										</div>
 										<div class="variant-option variant-option--2">
-											<label class="disabled"><span>9/43</span><input type="radio" name="size" disabled /></label>
+											<label class="disabled" for="9/43"><span>9/43</span><input type="radio" name="size" disabled id="9/43" /></label>
 										</div>
 										<div class="variant-option variant-option--2">
-											<label><span>10/44</span><input type="radio" name="size" /></label>
+											<label for="10/44"><span>10/44</span><input type="radio" name="size" id="10/44" /></label>
 										</div>
 										<div class="variant-option variant-option--2">
-											<label><span>11/45</span><input type="radio" name="size" /></label>
+											<label for="11/45"><span>11/45</span><input type="radio" name="size" id="11/45" /></label>
 										</div>
 										<div class="variant-option variant-option--2">
-											<label><span>12/46</span><input type="radio" name="size" /></label>
+											<label for="12/46"><span>12/46</span><input type="radio" name="size" id="12/46" /></label>
 										</div>
 									</div>
 								</div>
@@ -295,8 +476,8 @@
 									</div>
 									<div class="imbox__details">
 										<div class="imbox__details__images">
-											<img src="assets/imbox-1.jpg" alt="IMBOX logo" />
-											<img src="assets/imbox-2.jpg" alt="Allergy Certified" />
+											<img src="assets/imbox-1.jpg" alt="IMBOX logo" width="250" height="300" />
+											<img src="assets/imbox-2.jpg" alt="Allergy Certified" width="500" height="500" />
 										</div>
 										<div class="imbox__details__text">
 											<p>Protect your shoes with our IMBOX protective coating.</p>
@@ -491,7 +672,7 @@
 							</div>
 						</form>
 						<div class="footer__social">
-							<a href="#" class="branding" aria-label="Jones Homepage"><img src="assets/logo.png" alt="Jones" /></a>
+							<a href="#" class="branding" aria-label="Jones Homepage"><img src="assets/logo.png" alt="Jones" width="388" height="117" /></a>
 							<p>Customer Services: <a href="#" aria-label="Call us">0333 234 3342</a><br>Email: <a href="#" aria-label="Email us">helpdesk@jonesbootmaker.com</a></p>
 							<ul>
 								<li>

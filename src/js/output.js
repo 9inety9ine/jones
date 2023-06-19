@@ -7,7 +7,7 @@ const productInfo = document.querySelector('.product__info');
 const siteHeaderHeight = siteHeader.offsetHeight;
 productInfo.style.top = siteHeaderHeight + Number(productContainerPadding) + 'px';
 
-const initializeImageLoad = function () {
+window.initializeImageLoad = function () {
 	let imagesToLoad = document.querySelectorAll('img[data-src]');
 	const loadImages = image => {
 		image.setAttribute('src', image.getAttribute('data-src'));
@@ -37,7 +37,7 @@ const initializeImageLoad = function () {
 		});
 	}
 };
-initializeImageLoad();
+window.initializeImageLoad();
 
 const wishListButton = document.querySelector('.add-to-wishlist');
 wishListButton.addEventListener('click', e => {
